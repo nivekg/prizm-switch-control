@@ -1,3 +1,0 @@
-(sym_lib_table
-  (lib (name switch-control-hat-rescue)(type Legacy)(uri ${KIPRJMOD}/switch-control-hat-rescue.lib)(options "")(descr ""))
-)
