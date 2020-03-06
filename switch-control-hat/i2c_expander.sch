@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 6 6
 Title ""
-Date ""
+Date "2020-03-06"
 Rev ""
 Comp ""
 Comment1 ""
@@ -154,4 +154,10 @@ Text HLabel 6950 3600 2    50   Input ~ 0
 NOISE_ON
 Text HLabel 6950 3500 2    50   Input ~ 0
 S2_POS_1
+NoConn ~ 6550 3700
+NoConn ~ 6550 3800
+NoConn ~ 6550 3900
+NoConn ~ 6550 4100
+NoConn ~ 6550 4200
+NoConn ~ 6550 4300
 $EndSCHEMATC

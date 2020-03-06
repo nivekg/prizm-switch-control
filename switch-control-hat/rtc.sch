@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 6
 Title ""
-Date ""
+Date "2020-03-06"
 Rev ""
 Comp ""
 Comment1 ""
@@ -13,38 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Wire Wire Line
-	6200 3500 6350 3500
-$Comp
-L power:GND #PWR?
-U 1 1 5E62F0E0
-P 6350 3500
-AR Path="/5E62F0E0" Ref="#PWR?"  Part="1" 
-AR Path="/5E624F1D/5E62F0E0" Ref="#PWR0138"  Part="1" 
-F 0 "#PWR0138" H 6350 3250 50  0001 C CNN
-F 1 "GND" V 6355 3372 50  0000 R CNN
-F 2 "" H 6350 3500 50  0001 C CNN
-F 3 "" H 6350 3500 50  0001 C CNN
-	1    6350 3500
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	5750 3500 5900 3500
-Wire Wire Line
-	5750 3650 5750 3500
-$Comp
-L Device:Battery_Cell BT?
-U 1 1 5E62F0E8
-P 6100 3500
-AR Path="/5E62F0E8" Ref="BT?"  Part="1" 
-AR Path="/5E624F1D/5E62F0E8" Ref="BT1"  Part="1" 
-F 0 "BT1" V 6355 3550 50  0000 C CNN
-F 1 "3V" V 6264 3550 50  0000 C CNN
-F 2 "Battery:BatteryHolder_Keystone_3000_1x12mm" V 6100 3560 50  0001 C CNN
-F 3 "~" V 6100 3560 50  0001 C CNN
-	1    6100 3500
-	0    -1   -1   0   
-$EndComp
 Connection ~ 5650 3500
 Wire Wire Line
 	5650 3350 5650 3500
@@ -132,4 +100,51 @@ Wire Wire Line
 	5250 3950 4750 3950
 Wire Wire Line
 	5750 4450 5750 4600
+$Comp
+L Device:Battery_Cell BT1
+U 1 1 5E674E0B
+P 7750 3700
+F 0 "BT1" H 7868 3796 50  0000 L CNN
+F 1 "V3" H 7868 3705 50  0000 L CNN
+F 2 "Battery:BatteryHolder_Keystone_3000_1x12mm" V 7750 3760 50  0001 C CNN
+F 3 "~" V 7750 3760 50  0001 C CNN
+	1    7750 3700
+	1    0    0    -1  
+$EndComp
+Text Label 7750 3350 2    50   ~ 0
+3.3V_Backup
+$Comp
+L power:GND #PWR0138
+U 1 1 5E6762AD
+P 7750 3950
+F 0 "#PWR0138" H 7750 3700 50  0001 C CNN
+F 1 "GND" H 7755 3777 50  0000 C CNN
+F 2 "" H 7750 3950 50  0001 C CNN
+F 3 "" H 7750 3950 50  0001 C CNN
+	1    7750 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 3350 7750 3500
+Wire Wire Line
+	7750 3800 7750 3950
+Text Label 7000 3350 2    50   ~ 0
+3.3V_Backup
+$Comp
+L power:PWR_FLAG #FLG0105
+U 1 1 5E6795B4
+P 7000 3650
+F 0 "#FLG0105" H 7000 3725 50  0001 C CNN
+F 1 "PWR_FLAG" H 7000 3823 50  0000 C CNN
+F 2 "" H 7000 3650 50  0001 C CNN
+F 3 "~" H 7000 3650 50  0001 C CNN
+	1    7000 3650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7000 3650 7000 3350
+Text Label 5750 3350 0    50   ~ 0
+3.3V_Backup
+Wire Wire Line
+	5750 3350 5750 3650
 $EndSCHEMATC

@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 6
 Title "PRIZM Switch Control "
-Date "2019-11-28"
+Date "2020-03-06"
 Rev "1.1"
 Comp ""
 Comment1 ""
