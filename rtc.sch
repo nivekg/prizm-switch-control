@@ -55,9 +55,13 @@ P 5350 3500
 AR Path="/5E62F10F" Ref="C?"  Part="1" 
 AR Path="/5E624F1D/5E62F10F" Ref="C2"  Part="1" 
 F 0 "C2" V 5098 3500 50  0000 C CNN
-F 1 "1uF" V 5189 3500 50  0000 C CNN
+F 1 "0.1uF" V 5189 3500 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5388 3350 50  0001 C CNN
 F 3 "~" H 5350 3500 50  0001 C CNN
+F 4 "Digikey" H 5350 3500 50  0001 C CNN "VN"
+F 5 "Generic" H 5350 3500 50  0001 C CNN "MFN"
+F 6 "Generic" H 5350 3500 50  0001 C CNN "MPN"
+F 7 "311-1777-1-ND" H 5350 3500 50  0001 C CNN "VPN"
 	1    5350 3500
 	0    1    1    0   
 $EndComp
@@ -84,6 +88,10 @@ F 0 "U2" H 6000 4400 50  0000 C CNN
 F 1 "DS3231M" H 6000 3700 50  0000 C CNN
 F 2 "Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm" H 5750 3450 50  0001 C CNN
 F 3 "http://datasheets.maximintegrated.com/en/ds/DS3231.pdf" H 6020 4100 50  0001 C CNN
+F 4 "Digikey" H 5750 4050 50  0001 C CNN "VN"
+F 5 "Maxim Integrated" H 5750 4050 50  0001 C CNN "MFN"
+F 6 "DS3231SN#T&R" H 5750 4050 50  0001 C CNN "MPN"
+F 7 "DS3231SN#T&RCT-ND" H 5750 4050 50  0001 C CNN "VPN"
 	1    5750 4050
 	1    0    0    -1  
 $EndComp
@@ -105,9 +113,13 @@ L Device:Battery_Cell BT1
 U 1 1 5E674E0B
 P 7750 3700
 F 0 "BT1" H 7868 3796 50  0000 L CNN
-F 1 "V3" H 7868 3705 50  0000 L CNN
+F 1 "3V" H 7868 3705 50  0000 L CNN
 F 2 "Battery:BatteryHolder_Keystone_3000_1x12mm" V 7750 3760 50  0001 C CNN
-F 3 "~" V 7750 3760 50  0001 C CNN
+F 3 "https://www.keyelco.com/userAssets/file/M65p9.pdf" V 7750 3760 50  0001 C CNN
+F 4 "Digikey" H 7750 3700 50  0001 C CNN "VN"
+F 5 "Keystone Electronics" H 7750 3700 50  0001 C CNN "MFN"
+F 6 "3000" H 7750 3700 50  0001 C CNN "MPN"
+F 7 "36-3000-ND" H 7750 3700 50  0001 C CNN "VPN"
 	1    7750 3700
 	1    0    0    -1  
 $EndComp

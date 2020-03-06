@@ -22,7 +22,11 @@ AR Path="/5E49EFD8/5E4C7E0F" Ref="MK1"  Part="1"
 F 0 "MK1" H 6900 5446 50  0000 L CNN
 F 1 "M2.5" H 6900 5355 50  0000 L CNN
 F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 6800 5400 60  0001 C CNN
-F 3 "" H 6800 5400 60  0001 C CNN
+F 3 "~" H 6800 5400 60  0001 C CNN
+F 4 "None" H 6800 5400 50  0001 C CNN "VN"
+F 5 "None" H 6800 5400 50  0001 C CNN "MFN"
+F 6 "None" H 6800 5400 50  0001 C CNN "MPN"
+F 7 "None" H 6800 5400 50  0001 C CNN "VPN"
 	1    6800 5400
 	1    0    0    -1  
 $EndComp
@@ -35,7 +39,11 @@ AR Path="/5E49EFD8/5E4C7E15" Ref="MK3"  Part="1"
 F 0 "MK3" H 7900 5446 50  0000 L CNN
 F 1 "M2.5" H 7900 5355 50  0000 L CNN
 F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 7800 5400 60  0001 C CNN
-F 3 "" H 7800 5400 60  0001 C CNN
+F 3 "~" H 7800 5400 60  0001 C CNN
+F 4 "None" H 7800 5400 50  0001 C CNN "VN"
+F 5 "None" H 7800 5400 50  0001 C CNN "MFN"
+F 6 "None" H 7800 5400 50  0001 C CNN "MPN"
+F 7 "None" H 7800 5400 50  0001 C CNN "VPN"
 	1    7800 5400
 	1    0    0    -1  
 $EndComp
@@ -48,7 +56,11 @@ AR Path="/5E49EFD8/5E4C7E1B" Ref="MK2"  Part="1"
 F 0 "MK2" H 7400 5446 50  0000 L CNN
 F 1 "M2.5" H 7400 5355 50  0000 L CNN
 F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 7300 5400 60  0001 C CNN
-F 3 "" H 7300 5400 60  0001 C CNN
+F 3 "~" H 7300 5400 60  0001 C CNN
+F 4 "None" H 7300 5400 50  0001 C CNN "VN"
+F 5 "None" H 7300 5400 50  0001 C CNN "MFN"
+F 6 "None" H 7300 5400 50  0001 C CNN "MPN"
+F 7 "None" H 7300 5400 50  0001 C CNN "VPN"
 	1    7300 5400
 	1    0    0    -1  
 $EndComp
@@ -61,7 +73,11 @@ AR Path="/5E49EFD8/5E4C7E21" Ref="MK4"  Part="1"
 F 0 "MK4" H 8400 5446 50  0000 L CNN
 F 1 "M2.5" H 8400 5355 50  0000 L CNN
 F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 8300 5400 60  0001 C CNN
-F 3 "" H 8300 5400 60  0001 C CNN
+F 3 "~" H 8300 5400 60  0001 C CNN
+F 4 "None" H 8300 5400 50  0001 C CNN "VN"
+F 5 "None" H 8300 5400 50  0001 C CNN "MFN"
+F 6 "None" H 8300 5400 50  0001 C CNN "MPN"
+F 7 "None" H 8300 5400 50  0001 C CNN "VPN"
 	1    8300 5400
 	1    0    0    -1  
 $EndComp
@@ -94,12 +110,6 @@ Wire Wire Line
 Connection ~ 7950 3450
 Wire Wire Line
 	7950 3050 7850 3050
-Wire Wire Line
-	6200 3150 7350 3150
-Wire Wire Line
-	6200 3050 6750 3050
-Wire Wire Line
-	7350 2950 6450 2950
 Connection ~ 7250 4050
 Wire Wire Line
 	7250 3250 7350 3250
@@ -175,7 +185,11 @@ AR Path="/5E49EFD8/5E4C7E70" Ref="P1"  Part="1"
 F 0 "P1" H 7600 4867 50  0000 C CNN
 F 1 "RPi-Header" H 7600 4776 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical" H 2700 2800 50  0001 C CNN
-F 3 "" H 2700 2800 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Adafruit%20PDFs/1979_Web.pdf" H 2700 2800 50  0001 C CNN
+F 4 "Adafruit Industries LLC" H 7550 3750 50  0001 C CNN "MFN"
+F 5 "1979" H 7550 3750 50  0001 C CNN "MPN"
+F 6 "Digikey" H 7550 3750 50  0001 C CNN "VN"
+F 7 "1528-1783-ND" H 7550 3750 50  0001 C CNN "VPN"
 	1    7550 3750
 	1    0    0    -1  
 $EndComp
@@ -185,11 +199,11 @@ NoConn ~ 7850 2850
 NoConn ~ 7850 2950
 NoConn ~ 7350 3650
 NoConn ~ 7350 4250
-Text HLabel 6200 2950 0    50   Input ~ 0
+Text HLabel 5900 2950 0    50   Input ~ 0
 I2C_SDA
-Text HLabel 6200 3050 0    50   Input ~ 0
+Text HLabel 5900 3050 0    50   Input ~ 0
 I2C_SCL
-Text HLabel 6200 3150 0    50   Input ~ 0
+Text HLabel 5900 3150 0    50   Input ~ 0
 ONE-WIRE
 $Comp
 L Connector_Generic:Conn_01x03 J?
@@ -201,7 +215,11 @@ AR Path="/5E49EFD8/5E9A313D" Ref="J1"  Part="1"
 F 0 "J1" H 3768 3675 50  0000 C CNN
 F 1 "Power Connector" H 3768 3766 50  0000 C CNN
 F 2 "Connector_Phoenix_MC:PhoenixContact_MC_1,5_3-G-3.81_1x03_P3.81mm_Horizontal" H 3850 4000 50  0001 C CNN
-F 3 "~" H 3850 4000 50  0001 C CNN
+F 3 "https://www.cuidevices.com/product/resource/tbp02r1-381.pdf" H 3850 4000 50  0001 C CNN
+F 4 "Digikey" H 3850 4000 50  0001 C CNN "VN"
+F 5 "CUI Devices" H 3850 4000 50  0001 C CNN "MFN"
+F 6 "TBP02R1-381-03BE" H 3850 4000 50  0001 C CNN "MPN"
+F 7 "102-6481-ND" H 3850 4000 50  0001 C CNN "VPN"
 	1    3850 4000
 	-1   0    0    1   
 $EndComp
@@ -256,29 +274,33 @@ $EndComp
 $Comp
 L Device:R_US R?
 U 1 1 5E5D64A6
-P 6450 2650
+P 6150 2650
 AR Path="/5E5D64A6" Ref="R?"  Part="1" 
 AR Path="/5E624F1D/5E5D64A6" Ref="R?"  Part="1" 
 AR Path="/5E49EFD8/5E5D64A6" Ref="R1"  Part="1" 
-F 0 "R1" H 6518 2696 50  0000 L CNN
-F 1 "4K7" H 6518 2605 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6490 2640 50  0001 C CNN
-F 3 "~" H 6450 2650 50  0001 C CNN
-	1    6450 2650
+F 0 "R1" H 6218 2696 50  0000 L CNN
+F 1 "4K7" H 6218 2605 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6190 2640 50  0001 C CNN
+F 3 "~" H 6150 2650 50  0001 C CNN
+F 4 "Digikey" H 6150 2650 50  0001 C CNN "VN"
+F 5 "Generic" H 6150 2650 50  0001 C CNN "MFN"
+F 6 "Generic" H 6150 2650 50  0001 C CNN "MPN"
+F 7 "P4.7KDBCT-ND" H 6150 2650 50  0001 C CNN "VPN"
+	1    6150 2650
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3.3V #PWR?
 U 1 1 5E5D64AD
-P 6600 2200
+P 6450 2200
 AR Path="/5E5D64AD" Ref="#PWR?"  Part="1" 
 AR Path="/5E624F1D/5E5D64AD" Ref="#PWR?"  Part="1" 
 AR Path="/5E49EFD8/5E5D64AD" Ref="#PWR0139"  Part="1" 
-F 0 "#PWR0139" H 6600 2050 50  0001 C CNN
-F 1 "+3.3V" H 6615 2373 50  0000 C CNN
-F 2 "" H 6600 2200 50  0001 C CNN
-F 3 "" H 6600 2200 50  0001 C CNN
-	1    6600 2200
+F 0 "#PWR0139" H 6450 2050 50  0001 C CNN
+F 1 "+3.3V" H 6465 2373 50  0000 C CNN
+F 2 "" H 6450 2200 50  0001 C CNN
+F 3 "" H 6450 2200 50  0001 C CNN
+	1    6450 2200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -286,36 +308,27 @@ Wire Wire Line
 $Comp
 L Device:R_US R?
 U 1 1 5E5D64B5
-P 6750 2650
+P 6450 2650
 AR Path="/5E5D64B5" Ref="R?"  Part="1" 
 AR Path="/5E624F1D/5E5D64B5" Ref="R?"  Part="1" 
 AR Path="/5E49EFD8/5E5D64B5" Ref="R2"  Part="1" 
-F 0 "R2" H 6818 2696 50  0000 L CNN
-F 1 "4K7" H 6818 2605 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6790 2640 50  0001 C CNN
-F 3 "~" H 6750 2650 50  0001 C CNN
-	1    6750 2650
+F 0 "R2" H 6518 2696 50  0000 L CNN
+F 1 "4K7" H 6518 2605 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6490 2640 50  0001 C CNN
+F 3 "~" H 6450 2650 50  0001 C CNN
+F 4 "Digikey" H 6450 2650 50  0001 C CNN "VN"
+F 5 "Generic" H 6450 2650 50  0001 C CNN "MFN"
+F 6 "Generic" H 6450 2650 50  0001 C CNN "MPN"
+F 7 "P4.7KDBCT-ND" H 6450 2650 50  0001 C CNN "VPN"
+	1    6450 2650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6450 2350 6600 2350
-Wire Wire Line
-	6600 2200 6600 2350
-Connection ~ 6600 2350
-Wire Wire Line
-	6600 2350 6750 2350
+	6450 2200 6450 2350
 Wire Wire Line
 	6450 2500 6450 2350
 Wire Wire Line
-	6450 2800 6450 2950
-Connection ~ 6450 2950
-Wire Wire Line
-	6450 2950 6200 2950
-Wire Wire Line
-	6750 2800 6750 3050
-Connection ~ 6750 3050
-Wire Wire Line
-	6750 3050 7350 3050
+	6150 2950 5900 2950
 NoConn ~ 7850 3150
 NoConn ~ 7850 3250
 NoConn ~ 7350 4350
@@ -423,4 +436,48 @@ F 3 "" H 4850 3200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4850 2950 4850 3200
+$Comp
+L Device:R_US R?
+U 1 1 5E62CDA9
+P 6750 2650
+AR Path="/5E62CDA9" Ref="R?"  Part="1" 
+AR Path="/5E64C909/5E62CDA9" Ref="R?"  Part="1" 
+AR Path="/5E49EFD8/5E62CDA9" Ref="R3"  Part="1" 
+F 0 "R3" H 6818 2696 50  0000 L CNN
+F 1 "4K7" H 6818 2605 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6790 2640 50  0001 C CNN
+F 3 "~" H 6750 2650 50  0001 C CNN
+F 4 "Digikey" H 6750 2650 50  0001 C CNN "VN"
+F 5 "Generic" H 6750 2650 50  0001 C CNN "MFN"
+F 6 "Generic" H 6750 2650 50  0001 C CNN "MPN"
+F 7 "P4.7KDBCT-ND" H 6750 2650 50  0001 C CNN "VPN"
+	1    6750 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 2350 6150 2500
+Wire Wire Line
+	6150 2350 6450 2350
+Connection ~ 6450 2350
+Wire Wire Line
+	6450 2350 6750 2350
+Wire Wire Line
+	6150 2800 6150 2950
+Wire Wire Line
+	6150 2950 7350 2950
+Connection ~ 6150 2950
+Wire Wire Line
+	5900 3050 6450 3050
+Wire Wire Line
+	5900 3150 6750 3150
+Wire Wire Line
+	6450 2800 6450 3050
+Connection ~ 6450 3050
+Wire Wire Line
+	6450 3050 7350 3050
+Wire Wire Line
+	6750 2800 6750 3150
+Connection ~ 6750 3150
+Wire Wire Line
+	6750 3150 7350 3150
 $EndSCHEMATC

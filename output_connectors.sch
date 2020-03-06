@@ -13,9 +13,7 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Wire Wire Line
-	4900 3650 4900 3550
-Text HLabel 4700 3650 0    50   Input ~ 0
+Text HLabel 5600 3650 0    50   Input ~ 0
 ONE-WIRE
 Text HLabel 5600 2550 0    50   Input ~ 0
 POS_1
@@ -57,37 +55,6 @@ Wire Wire Line
 	5600 4250 6600 4250
 Wire Wire Line
 	5600 3450 6600 3450
-Wire Wire Line
-	4700 3650 4900 3650
-Connection ~ 4900 3650
-Wire Wire Line
-	4900 3650 6600 3650
-$Comp
-L Device:R_US R?
-U 1 1 5E650E19
-P 4900 3400
-AR Path="/5E650E19" Ref="R?"  Part="1" 
-AR Path="/5E64C909/5E650E19" Ref="R13"  Part="1" 
-F 0 "R13" H 4968 3446 50  0000 L CNN
-F 1 "4K7" H 4968 3355 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4940 3390 50  0001 C CNN
-F 3 "~" H 4900 3400 50  0001 C CNN
-	1    4900 3400
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR0151
-U 1 1 5E5353C9
-P 4900 3100
-F 0 "#PWR0151" H 4900 2950 50  0001 C CNN
-F 1 "+3.3V" H 4915 3273 50  0000 C CNN
-F 2 "" H 4900 3100 50  0001 C CNN
-F 3 "" H 4900 3100 50  0001 C CNN
-	1    4900 3100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4900 3100 4900 3250
 Text HLabel 5600 4350 0    50   Input ~ 0
 NOISE-SOURCE
 Wire Wire Line
@@ -99,27 +66,33 @@ P 6800 3750
 F 0 "J2" H 6880 3792 50  0000 L CNN
 F 1 "Frontend Connector" H 6880 3701 50  0000 L CNN
 F 2 "Connector_Phoenix_MC:PhoenixContact_MC_1,5_12-G-3.81_1x12_P3.81mm_Horizontal" H 6800 3750 50  0001 C CNN
-F 3 "~" H 6800 3750 50  0001 C CNN
+F 3 "https://www.cuidevices.com/product/resource/tbp02r1-381.pdf" H 6800 3750 50  0001 C CNN
+F 4 "Digikey" H 6800 3750 50  0001 C CNN "VN"
+F 5 "CUI Devices" H 6800 3750 50  0001 C CNN "MFN"
+F 6 "TBP02R1-381-12BE" H 6800 3750 50  0001 C CNN "MPN"
+F 7 "102-6489-ND" H 6800 3750 50  0001 C CNN "VPN"
 	1    6800 3750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	5600 3750 6600 3750
-Wire Wire Line
-	5100 3950 6600 3950
 Text HLabel 5600 3750 0    50   Input ~ 0
 POS_5
 $Comp
-L power:GND #PWR?
-U 1 1 5E650E31
-P 5100 3950
-AR Path="/5E650E31" Ref="#PWR?"  Part="1" 
-AR Path="/5E64C909/5E650E31" Ref="#PWR0152"  Part="1" 
-F 0 "#PWR0152" H 5100 3700 50  0001 C CNN
-F 1 "GND" V 5105 3822 50  0000 R CNN
-F 2 "" H 5100 3950 50  0001 C CNN
-F 3 "" H 5100 3950 50  0001 C CNN
-	1    5100 3950
-	0    1    1    0   
+L power:GND #PWR0148
+U 1 1 5E62A28F
+P 6450 4550
+F 0 "#PWR0148" H 6450 4300 50  0001 C CNN
+F 1 "GND" H 6455 4377 50  0000 C CNN
+F 2 "" H 6450 4550 50  0001 C CNN
+F 3 "" H 6450 4550 50  0001 C CNN
+	1    6450 4550
+	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	6450 4550 6450 3950
+Wire Wire Line
+	6450 3950 6600 3950
+Wire Wire Line
+	6600 3650 5600 3650
 $EndSCHEMATC
